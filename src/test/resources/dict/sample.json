@@ -1,0 +1,10 @@
+{
+  "a": {
+    "b": {
+      "i": "value-i",
+      "j": "value-j"
+    },
+    "d": ["value-d-1", "value-d-2"],
+    "c": "value-c"
+  }
+}
