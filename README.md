@@ -7,7 +7,7 @@ deserve a separate repo.
 
 - [dict](#dict)
 
-## dict [](#){name=dict}
+## dict
 Simple dictionary module supporting parametrization and randomization of messages,
 shipped with json decoder for [circe][circe].
 
