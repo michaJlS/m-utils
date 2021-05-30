@@ -1,6 +1,6 @@
 # m-utils
 
-[![Build Status](https://travis-ci.org/michaJlS/m-utils.svg?branch=master)](https://travis-ci.org/michaJlS/m-utils)
+My playground. 
 
 Pieces of code that show chance of being reused, but are too small to
 deserve a separate repo.
