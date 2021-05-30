@@ -1,11 +1,11 @@
 package com.alerf.mutils.marshalling
 
-import org.scalatest.FunSpec
-import org.scalatest.Matchers._
+import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should._
 
 import io.circe._, io.circe.parser._
 
-class JsonCirceTest extends FunSpec {
+class JsonCirceTest extends AnyFunSpec with Matchers {
   describe("JsonCirce") {
     describe("Provides Either decoder that") {
       it("should decode Right when Left is invalid") {
@@ -22,7 +22,7 @@ class JsonCirceTest extends FunSpec {
       }
       it("should fail when both are invalid") {
         val json = parse("{\"a\": 3}").right.get
-        JsonCirce.eitherDecoder[Int, String].decodeJson(json) shouldBe 'left
+        JsonCirce.eitherDecoder[Int, String].decodeJson(json).isLeft shouldBe true
       }
     }
   }
